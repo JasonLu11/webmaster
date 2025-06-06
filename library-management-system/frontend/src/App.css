@@ -1,0 +1,43 @@
+.layout {
+  min-height: 100vh;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header {
+  background: #fff;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+.dashboard {
+  padding: 24px;
+}
+
+.dashboard .ant-card {
+  margin-bottom: 24px;
+} 
