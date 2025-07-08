@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜狗输入法 - 装扮打字好心情</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 固定导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="搜狗输入法" class="logo-img">
+                <span class="logo-text">搜狗输入法</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-item">产品</a>
+                <a href="#skins" class="nav-item">皮肤</a>
+                <a href="#updates" class="nav-item">更新日志</a>
+                <a href="#download" class="nav-item download-btn">下载手机版</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="section home-section">
+        <div class="home-content">
+            <h1 class="main-title">装扮打字好心情</h1>
+            <p class="sub-title">搜狗输入法·好的装扮尽在这里</p>
+            <button class="download-button" onclick="handleDownload()">
+                <span class="download-text">立即下载</span>
+            </button>
+        </div>
+        <div class="home-background"></div>
+    </section>
+
+    <!-- AI搜索页面 -->
+    <section id="ai-search" class="section content-section">
+        <div class="section-container">
+            <div class="content-wrapper" style="flex-direction: column; align-items: center; text-align: center;">
+                <div class="text-content" style="margin-bottom: 32px;">
+                    <h2 class="section-title" style="font-size: 56px; font-weight: 800; margin-bottom: 16px;">
+                        <span style="color: #FF6A18;">AI皮肤</span> <span style="color: #222;">个性定制</span>
+                    </h2>
+                    <p class="section-description" style="font-size: 22px; color: #888; margin-bottom: 0;">上传照片，一键定制专属皮肤</p>
+                </div>
+                <div class="media-content" style="width: 100%; display: flex; justify-content: center;">
+                    <img src="1.jpg" alt="AI皮肤定制演示图" style="max-width: 480px; width: 100%; border-radius: 18px; box-shadow: 0 4px 32px rgba(0,0,0,0.08);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI快查页面 -->
+    <section id="ai-quick" class="section content-section">
+        <div class="section-container">
+            <div class="content-wrapper" style="flex-direction: column; align-items: center; text-align: center;">
+                <div class="text-content" style="margin-bottom: 32px;">
+                    <h2 class="section-title" style="font-size: 56px; font-weight: 800; margin-bottom: 16px;">
+                        <span style="color: #FF6A18;">AI搜索</span> <span style="color: #222;">即输即搜</span>
+                    </h2>
+                    <p class="section-description" style="font-size: 22px; color: #888; margin-bottom: 0;">问汪仔，迅速获取全网信息</p>
+                </div>
+                <div class="media-content" style="width: 100%; display: flex; justify-content: center;">
+                    <img src="2.jpg" alt="AI搜索演示图" style="max-width: 480px; width: 100%; border-radius: 18px; box-shadow: 0 4px 32px rgba(0,0,0,0.08);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 皮肤展示页面 -->
+    <section id="skins" class="section content-section">
+        <div class="section-container">
+            <div class="content-wrapper" style="flex-direction: column; align-items: center; text-align: center;">
+                <div class="text-content" style="margin-bottom: 32px;">
+                    <h2 class="section-title" style="font-size: 56px; font-weight: 800; margin-bottom: 16px;">
+                        <span style="color: #FF6A18;">AI打字</span> <span style="color: #222;">准确高效</span>
+                    </h2>
+                    <p class="section-description" style="font-size: 22px; color: #888; margin-bottom: 0;">智能纠错，输入更加得心应手</p>
+                </div>
+                <div class="media-content" style="width: 100%; display: flex; justify-content: center;">
+                    <img src="3.jpg" alt="AI打字演示图" style="max-width: 800px; width: 100%; border-radius: 18px; box-shadow: 0 4px 32px rgba(0,0,0,0.08);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI陪伴页面 -->
+    <section id="ai-companion" class="section content-section" style="background: #fff;">
+        <div class="section-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h2 style="font-size: 72px; font-weight: 900; color: #FF6A18; margin-bottom: 60px; margin-top: 0;">AI服务</h2>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; width: 100%; max-width: 1200px;">
+                <div style="border: 2px solid #222; border-radius: 18px; padding: 32px 12px 24px 12px; background: #fff; display: flex; flex-direction: column; align-items: center; min-width: 0;">
+                    <div style="font-size: 40px; font-weight: 700; margin-bottom: 18px; margin-top: 0; color: #222;">*<br><span style='font-size: 36px;'>拍照输入</span></div>
+                    <div style="font-size: 24px; color: #666;">一扫即识文本</div>
+                </div>
+                <div style="border: 2px solid #222; border-radius: 18px; padding: 32px 12px 24px 12px; background: #fff; display: flex; flex-direction: column; align-items: center; min-width: 0;">
+                    <div style="font-size: 40px; font-weight: 700; margin-bottom: 18px; margin-top: 0; color: #222;">*<br><span style='font-size: 36px;'>跨屏输入</span></div>
+                    <div style="font-size: 24px; color: #666;">多端无缝接力</div>
+                </div>
+                <div style="border: 2px solid #222; border-radius: 18px; padding: 32px 12px 24px 12px; background: #fff; display: flex; flex-direction: column; align-items: center; min-width: 0;">
+                    <div style="font-size: 40px; font-weight: 700; margin-bottom: 18px; margin-top: 0; color: #222;">*<br><span style='font-size: 36px;'>智能回复</span></div>
+                    <div style="font-size: 24px; color: #666;">聊天话术增强</div>
+                </div>
+                <div style="border: 2px solid #222; border-radius: 18px; padding: 32px 12px 24px 12px; background: #fff; display: flex; flex-direction: column; align-items: center; min-width: 0;">
+                    <div style="font-size: 40px; font-weight: 700; margin-bottom: 18px; margin-top: 0; color: #222;">*<br><span style='font-size: 36px;'>声文互转</span></div>
+                    <div style="font-size: 24px; color: #666;">方言精准转写</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 魔术手势页面 -->
+    <!--
+    <section id="magic-gesture" class="section content-section">
+        <div class="section-container">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2 class="section-title">魔术手势</h2>
+                    <p class="section-description">
+                        创新的手势操作，让输入变得更加直观和便捷。通过简单的手势即可完成复杂操作。
+                    </p>
+                    <ul class="feature-list">
+                        <li>手势识别</li>
+                        <li>快速操作</li>
+                        <li>自定义手势</li>
+                    </ul>
+                </div>
+                <div class="media-content">
+                    <img src="assets/placeholder.svg" alt="魔术手势演示图" class="content-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- 页脚 -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>产品服务</h3>
+                    <ul>
+                        <li><a href="#">搜狗输入法</a></li>
+                        <li><a href="#">搜狗浏览器</a></li>
+                        <li><a href="#">搜狗搜索</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>技术支持</h3>
+                    <ul>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">问题反馈</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <ul>
+                        <li><a href="#">公司介绍</a></li>
+                        <li><a href="#">招聘信息</a></li>
+                        <li><a href="#">新闻动态</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>法律信息</h3>
+                    <ul>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">版权声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 搜狗输入法. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

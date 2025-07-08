@@ -1,0 +1,165 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* 通用容器 */
+.section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* 按钮样式 */
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* 链接样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .section-container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-container {
+        padding: 0 10px;
+    }
+}
+
+.home-section {
+    background: url('../firstpage.png') no-repeat center top;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* 顶部对齐 */
+    justify-content: center;
+}
+
+.home-content {
+    margin-top: 80px; /* 距离顶部适当下移，避免被导航栏遮挡 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 900px;
+    z-index: 2;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    margin-bottom: 18px;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.sub-title {
+    font-size: 12px;
+    color: #e6e6e6;
+    margin-bottom: 38px;
+    letter-spacing: 0.6em;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.download-button {
+    font-size: 24px;
+    padding: 18px 48px;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    margin-top: 0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    font-weight: 700;
+    transition: background 0.2s;
+}
+.download-button:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 16px;
+    }
+    .sub-title {
+        font-size: 10px;
+        letter-spacing: 0.3em;
+    }
+    .home-content {
+        margin-top: 60px;
+        max-width: 98vw;
+    }
+    .download-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+.download-text {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+} 

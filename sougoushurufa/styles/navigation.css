@@ -1,0 +1,127 @@
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px; /* 原70px，缩小高度 */
+}
+
+/* Logo样式 */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 6px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FF6A18;
+}
+
+/* 导航菜单 */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: #007bff;
+    background: rgba(0, 123, 255, 0.1);
+}
+
+/* 下载按钮特殊样式 */
+.download-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* 响应式导航 */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 15px;
+        height: 44px; /* 响应式下进一步缩小 */
+    }
+    
+    .nav-menu {
+        gap: 15px;
+    }
+    
+    .nav-item {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .download-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .logo-text {
+        font-size: 22px;
+        color: #FF6A18;
+    }
+    
+    .logo-img {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        gap: 10px;
+    }
+    
+    .nav-item {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+    
+    .download-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+} 
