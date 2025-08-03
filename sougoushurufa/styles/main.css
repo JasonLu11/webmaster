@@ -69,10 +69,16 @@ a:hover {
     color: #007bff;
 }
 
-/* 响应式设计 */
+/* 响应式设计 - 基础设置 */
 @media (max-width: 768px) {
     .section-container {
         padding: 0 15px;
+    }
+    
+    /* 确保字体在移动端清晰显示 */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 }
 
@@ -140,23 +146,7 @@ a:hover {
     background: rgba(255,255,255,0.18);
 }
 
-@media (max-width: 768px) {
-    .main-title {
-        font-size: 16px;
-    }
-    .sub-title {
-        font-size: 10px;
-        letter-spacing: 0.3em;
-    }
-    .home-content {
-        margin-top: 60px;
-        max-width: 98vw;
-    }
-    .download-button {
-        font-size: 18px;
-        padding: 12px 24px;
-    }
-}
+/* 移动端样式已移至 mobile.css 文件 */
 
 .download-text {
     font-size: 24px;

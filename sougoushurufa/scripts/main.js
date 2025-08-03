@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 初始化下载按钮功能
     initDownloadButton();
+    
+    // 初始化移动端菜单
+    initMobileMenu();
 });
 
 // 导航栏滚动效果
@@ -211,4 +214,42 @@ function initScrollProgress() {
 }
 
 // 初始化滚动进度条
-initScrollProgress(); 
+initScrollProgress();
+
+// 移动端菜单功能
+function initMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // 点击菜单项时关闭菜单
+        const navItems = navMenu.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // 点击页面其他区域时关闭菜单
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+        
+        // 窗口大小改变时重置菜单状态
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    }
+} 

@@ -47,6 +47,11 @@
     gap: 30px;
 }
 
+/* 移动端菜单按钮 - 桌面端隐藏 */
+.mobile-menu-toggle {
+    display: none;
+}
+
 .nav-item {
     font-size: 16px;
     font-weight: 500;
@@ -78,50 +83,5 @@
     box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
 }
 
-/* 响应式导航 */
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 0 15px;
-        height: 44px; /* 响应式下进一步缩小 */
-    }
-    
-    .nav-menu {
-        gap: 15px;
-    }
-    
-    .nav-item {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-    
-    .download-btn {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-    
-    .logo-text {
-        font-size: 22px;
-        color: #FF6A18;
-    }
-    
-    .logo-img {
-        width: 52px;
-        height: 52px;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-menu {
-        gap: 10px;
-    }
-    
-    .nav-item {
-        font-size: 13px;
-        padding: 5px 8px;
-    }
-    
-    .download-btn {
-        padding: 6px 12px;
-        font-size: 13px;
-    }
-} 
+/* 响应式导航 - 基础设置 */
+/* 详细的移动端样式请参考 mobile.css 文件 */ 

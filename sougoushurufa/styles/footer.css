@@ -100,52 +100,5 @@
     margin: 0;
 }
 
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .footer {
-        padding: 40px 0 20px;
-    }
-    
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-    
-    .qr-section {
-        grid-column: span 2;
-        text-align: center;
-    }
-    
-    .footer-section h3 {
-        font-size: 1.1rem;
-    }
-    
-    .footer-section ul li a {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    
-    .qr-section {
-        grid-column: span 1;
-    }
-    
-    .footer-section h3 {
-        font-size: 1rem;
-    }
-    
-    .footer-section ul li a {
-        font-size: 0.85rem;
-    }
-    
-    .qr-placeholder {
-        width: 60px;
-        height: 60px;
-        font-size: 0.7rem;
-    }
-} 
+/* 响应式设计 - 基础设置 */
+/* 详细的移动端样式请参考 mobile.css 文件 */ 
